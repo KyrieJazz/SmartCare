@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@color/bg_orange">
 
@@ -37,19 +37,91 @@
             android:background="@drawable/bg_radius"
             android:layout_marginTop="20dp"
             >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/button_monitor"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Monitor">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button_history"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="100dp"
+                    android:text="History">
+
+                </Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_circumstance"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="70dp"
+                    android:text="circumstance"
+                    android:textSize="10sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/button_contact"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="70dp"
+                    android:text="contact">
+
+                </Button>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-
 
     <LinearLayout
         android:id="@+id/BottomMenu"
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="72dp"
         android:background="@color/black"
         android:orientation="horizontal"
         >
-
+        <Button
+            android:id="@+id/button_message"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:text="Message"
+            android:layout_marginLeft="50dp"
+            android:textSize="7sp">
+        </Button>
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:text="home"
+            android:layout_marginLeft="50dp"
+            android:textSize="7sp">
+        </Button>
+        <Button
+            android:id="@+id/button_account"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:text="Account"
+            android:layout_marginLeft="50dp"
+            android:textSize="7sp">
+        </Button>
     </LinearLayout>
 </LinearLayout>
